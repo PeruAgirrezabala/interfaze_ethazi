@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CookpadForm", "Cookpad\CookpadForm.csproj", "{71160CD6-6E26-450F-8061-CC7A01607B07}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CookpadDll", "CookpadDll\CookpadDll.csproj", "{81C83F14-0A52-4011-87D0-E689AF47E513}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{71160CD6-6E26-450F-8061-CC7A01607B07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71160CD6-6E26-450F-8061-CC7A01607B07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71160CD6-6E26-450F-8061-CC7A01607B07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71160CD6-6E26-450F-8061-CC7A01607B07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81C83F14-0A52-4011-87D0-E689AF47E513}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81C83F14-0A52-4011-87D0-E689AF47E513}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81C83F14-0A52-4011-87D0-E689AF47E513}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81C83F14-0A52-4011-87D0-E689AF47E513}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A1A4FEB8-3BDF-4FBB-B78B-FC0AE165D951}
+	EndGlobalSection
+EndGlobal
