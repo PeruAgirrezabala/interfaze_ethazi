@@ -1,8 +1,0 @@
-C:\Users\agirrezabala.peru\Documents\interface-garapena22-23\EntityFramework\pcBox\pcBoxControlLibrary\bin\Debug\pcBoxControlLibrary.dll
-C:\Users\agirrezabala.peru\Documents\interface-garapena22-23\EntityFramework\pcBox\pcBoxControlLibrary\bin\Debug\pcBoxControlLibrary.pdb
-C:\Users\agirrezabala.peru\Documents\interface-garapena22-23\EntityFramework\pcBox\pcBoxControlLibrary\obj\Debug\pcBoxControlLibrary.csproj.AssemblyReference.cache
-C:\Users\agirrezabala.peru\Documents\interface-garapena22-23\EntityFramework\pcBox\pcBoxControlLibrary\obj\Debug\pcBoxControlLibrary.UserControl1.resources
-C:\Users\agirrezabala.peru\Documents\interface-garapena22-23\EntityFramework\pcBox\pcBoxControlLibrary\obj\Debug\pcBoxControlLibrary.csproj.GenerateResource.cache
-C:\Users\agirrezabala.peru\Documents\interface-garapena22-23\EntityFramework\pcBox\pcBoxControlLibrary\obj\Debug\pcBoxControlLibrary.csproj.CoreCompileInputs.cache
-C:\Users\agirrezabala.peru\Documents\interface-garapena22-23\EntityFramework\pcBox\pcBoxControlLibrary\obj\Debug\pcBoxControlLibrary.dll
-C:\Users\agirrezabala.peru\Documents\interface-garapena22-23\EntityFramework\pcBox\pcBoxControlLibrary\obj\Debug\pcBoxControlLibrary.pdb
