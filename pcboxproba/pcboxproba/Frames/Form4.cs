@@ -62,5 +62,12 @@ namespace pcboxproba.Frames
             form5.Show();
             Visible = false;
         }
+
+        private void atzera_button_Click(object sender, EventArgs e)
+        {
+            Form3 form3 = new Form3();
+            form3.Show();
+            Visible=false;
+        }
     }
 }

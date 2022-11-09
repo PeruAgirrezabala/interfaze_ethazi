@@ -13,6 +13,7 @@ namespace pcboxproba.Model
         public int id { get; set; }
         public string name { get; set; }
         public int product_uom_qty { get; set; }
+        public int product_id { get; set; }
 
     }
 }

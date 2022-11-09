@@ -35,13 +35,14 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.atzera_button = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
             // 
             this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Location = new System.Drawing.Point(304, 265);
+            this.button1.Location = new System.Drawing.Point(296, 203);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(123, 27);
             this.button1.TabIndex = 0;
@@ -52,7 +53,7 @@
             // button2
             // 
             this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button2.Location = new System.Drawing.Point(304, 333);
+            this.button2.Location = new System.Drawing.Point(296, 271);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(123, 23);
             this.button2.TabIndex = 1;
@@ -63,7 +64,7 @@
             // button3
             // 
             this.button3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button3.Location = new System.Drawing.Point(304, 395);
+            this.button3.Location = new System.Drawing.Point(296, 333);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(123, 24);
             this.button3.TabIndex = 2;
@@ -76,7 +77,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(97, 279);
+            this.label1.Location = new System.Drawing.Point(89, 217);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 3;
@@ -87,7 +88,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label2.ForeColor = System.Drawing.SystemColors.Control;
-            this.label2.Location = new System.Drawing.Point(97, 343);
+            this.label2.Location = new System.Drawing.Point(89, 281);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(35, 13);
             this.label2.TabIndex = 4;
@@ -98,7 +99,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label3.ForeColor = System.Drawing.SystemColors.Control;
-            this.label3.Location = new System.Drawing.Point(97, 406);
+            this.label3.Location = new System.Drawing.Point(89, 344);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(35, 13);
             this.label3.TabIndex = 5;
@@ -113,12 +114,24 @@
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
+            // atzera_button
+            // 
+            this.atzera_button.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.atzera_button.Location = new System.Drawing.Point(49, 424);
+            this.atzera_button.Name = "atzera_button";
+            this.atzera_button.Size = new System.Drawing.Size(75, 23);
+            this.atzera_button.TabIndex = 18;
+            this.atzera_button.Text = "Atzera";
+            this.atzera_button.UseVisualStyleBackColor = true;
+            this.atzera_button.Click += new System.EventHandler(this.atzera_button_Click);
+            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(477, 495);
+            this.Controls.Add(this.atzera_button);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -128,6 +141,7 @@
             this.Controls.Add(this.button1);
             this.ForeColor = System.Drawing.SystemColors.Control;
             this.Name = "Form4";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form4";
             this.Load += new System.EventHandler(this.Form4_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -145,5 +159,6 @@
         public System.Windows.Forms.Label label2;
         public System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button atzera_button;
     }
 }

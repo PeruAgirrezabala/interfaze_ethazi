@@ -46,6 +46,7 @@
             this.ClientSize = new System.Drawing.Size(561, 450);
             this.Controls.Add(this.grafikoaren_kontrola1);
             this.Name = "Form6";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form6";
             this.ResumeLayout(false);
 

@@ -37,7 +37,7 @@ namespace pcboxproba.Frames
                                 Form3 form3 = new Form3();
                                 form3.Show();
                                 
-                                form3.label1.Text= form3.label1.Text+" "+logindata[i];
+                                form3.erabiltzailea_target_label.Text= form3.erabiltzailea_target_label.Text+" "+logindata[i];
                                 Visible = false;
 
                             }
