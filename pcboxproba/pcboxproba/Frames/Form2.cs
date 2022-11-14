@@ -33,12 +33,16 @@ namespace pcboxproba.Frames
                         {
                             if (emailtb.Text == logindata[i])
                             {
-                                
-                                Form3 form3 = new Form3();
-                                form3.Show();
-                                
-                                form3.erabiltzailea_target_label.Text= form3.erabiltzailea_target_label.Text+" "+logindata[i];
-                                Visible = false;
+                                var paswordata = db.res_users.Select(b => b.password).ToArray();
+                                if (Model.res.GenerateComparableHash.VerifyNonstandardHash(paswordtb.Text, paswordata[i]))
+                                {
+
+                                    Form3 form3 = new Form3();
+                                    form3.Show();
+
+                                    form3.erabiltzailea_target_label.Text = form3.erabiltzailea_target_label.Text + " " + logindata[i];
+                                    Visible = false;
+                                }
 
                             }
                         }
@@ -52,7 +56,6 @@ namespace pcboxproba.Frames
             
 
         }
-
 
     }
 }

@@ -87,3 +87,5 @@ C:\Users\agirrezabala.peru\Desktop\interfaze_ethazi\pcboxproba\pcboxproba\obj\De
 C:\Users\agirrezabala.peru\Desktop\interfaze_ethazi\pcboxproba\pcboxproba\obj\Debug\pcboxproba.csproj.CopyComplete
 C:\Users\agirrezabala.peru\Desktop\interfaze_ethazi\pcboxproba\pcboxproba\obj\Debug\pcboxproba.exe
 C:\Users\agirrezabala.peru\Desktop\interfaze_ethazi\pcboxproba\pcboxproba\obj\Debug\pcboxproba.pdb
+C:\Users\agirrezabala.peru\Desktop\interfaze_ethazi\pcboxproba\pcboxproba\obj\Debug\pcboxproba.Frames.Form7.resources
+C:\Users\agirrezabala.peru\Desktop\interfaze_ethazi\pcboxproba\pcboxproba\obj\Debug\pcboxproba.Frames.Form8.resources

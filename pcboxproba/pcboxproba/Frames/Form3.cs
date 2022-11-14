@@ -41,14 +41,10 @@ namespace pcboxproba.Frames
 
         private void button5_Click(object sender, EventArgs e)
         {
-            Form1 form1 = new Form1();
-            form1.Show();
+            Form8 form8 = new Form8();
+            form8.Show();
             Visible=true;
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

@@ -129,7 +129,23 @@
     <Compile Include="Frames\Form6.Designer.cs">
       <DependentUpon>Form6.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frames\Form7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frames\Form7.Designer.cs">
+      <DependentUpon>Form7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frames\Form8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frames\Form8.Designer.cs">
+      <DependentUpon>Form8.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model\PcBoxDbContext.cs" />
+    <Compile Include="Model\res\GenerateComparableHash.cs" />
+    <Compile Include="Model\res\HMACSHA512PseudoRandomFunction.cs" />
+    <Compile Include="Model\res\IPseudoRandomFunction.cs" />
+    <Compile Include="Model\res\PBKDF2DeriveBytes.cs" />
     <Compile Include="Model\res_partner.cs" />
     <Compile Include="Model\res_users.cs" />
     <Compile Include="Model\sale_order.cs" />
@@ -155,6 +171,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frames\Form6.resx">
       <DependentUpon>Form6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frames\Form7.resx">
+      <DependentUpon>Form7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frames\Form8.resx">
+      <DependentUpon>Form8.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -192,6 +214,7 @@
       <Name>grafikoaDll</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

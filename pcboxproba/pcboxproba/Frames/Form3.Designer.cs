@@ -49,7 +49,7 @@
             this.erabiltzailea_target_label.Name = "erabiltzailea_target_label";
             this.erabiltzailea_target_label.Size = new System.Drawing.Size(0, 25);
             this.erabiltzailea_target_label.TabIndex = 0;
-            this.erabiltzailea_target_label.Click += new System.EventHandler(this.label1_Click);
+
             // 
             // saioa_itxi
             // 

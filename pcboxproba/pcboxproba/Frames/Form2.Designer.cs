@@ -34,6 +34,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.paswordtb = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,7 +50,7 @@
             // 
             // emailtb
             // 
-            this.emailtb.Location = new System.Drawing.Point(156, 341);
+            this.emailtb.Location = new System.Drawing.Point(156, 301);
             this.emailtb.Name = "emailtb";
             this.emailtb.Size = new System.Drawing.Size(207, 20);
             this.emailtb.TabIndex = 1;
@@ -57,7 +59,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(153, 306);
+            this.label1.Location = new System.Drawing.Point(153, 275);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(119, 13);
             this.label1.TabIndex = 2;
@@ -83,6 +85,23 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "label2";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.Location = new System.Drawing.Point(153, 350);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(134, 13);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Sartu ezazu zure pasahitza";
+            // 
+            // paswordtb
+            // 
+            this.paswordtb.Location = new System.Drawing.Point(156, 383);
+            this.paswordtb.Name = "paswordtb";
+            this.paswordtb.Size = new System.Drawing.Size(207, 20);
+            this.paswordtb.TabIndex = 6;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -90,6 +109,8 @@
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(540, 598);
+            this.Controls.Add(this.paswordtb);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
@@ -112,5 +133,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        public System.Windows.Forms.TextBox paswordtb;
     }
 }

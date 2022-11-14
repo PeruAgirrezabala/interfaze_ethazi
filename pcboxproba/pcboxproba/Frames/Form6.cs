@@ -23,8 +23,8 @@ namespace pcboxproba.Frames
             using (var db = new PcBoxDbContext())
             {
                 
-                var gehien_saldutako_produktuak = db.sale_order_lines.GroupBy(b=>b.product_id).OrderByDescending(b=>b.Sum(a=>a.product_uom_qty)).Take(5).ToDictionary(g=>g.GroupBy(a=>a.name).ToList(),b=>b.Sum(a=>a.product_uom_qty));
-                if (gehien_saldutako_produktuak != null)
+                    var gehien_saldutako_produktuak = db.sale_order_lines.OrderByDescending(b=>).GroupBy(a=>a.name)
+                    if (gehien_saldutako_produktuak != null)
                 {
 
                         var kontrolak = grafikoaren_kontrola1.Controls.OfType<System.Windows.Forms.DataVisualization.Charting.Chart>();
@@ -33,8 +33,7 @@ namespace pcboxproba.Frames
                         {
                             kontrola.Titles[0].Text = "Gehien saldu diren produktuak";
                             kontrola.DataSource = gehien_saldutako_produktuak;
-
-                             kontrola.Series[0].XValueMember = "Key";
+                            kontrola.Series[0].XValueMember = "Key";
                             kontrola.Series[0].YValueMembers = "Value";
                             kontrola.DataBind();
                         }
@@ -42,6 +41,11 @@ namespace pcboxproba.Frames
 
                 }
             }
+        }
+
+        private void Form6_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

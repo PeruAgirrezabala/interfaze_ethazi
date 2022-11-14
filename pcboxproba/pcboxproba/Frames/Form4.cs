@@ -22,7 +22,7 @@ namespace pcboxproba.Frames
             using(var db = new PcBoxDbContext())
             {
 
-               var  mejoresClientes = db.res_partners.Where(b=>b.is_company==true && b.id!=1).OrderBy(c=>c.supplier_rank).Select(b=>b.name).ToArray();
+               var  mejoresClientes = db.res_partners.Where(b=>b.is_company==true && b.id!=1).OrderBy(c=>c.customer_rank).Select(b=>b.name).ToArray();
                 enpresak = mejoresClientes;
                 if( mejoresClientes != null)
                 {
@@ -41,25 +41,25 @@ namespace pcboxproba.Frames
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form5 form5 = new Form5();
-            form5.label9.Text = enpresak[0].ToString();
-            form5.Show();
+            Form7 form7 = new Form7();
+            form7.label9.Text = enpresak[0].ToString();
+            form7.Show();
             Visible = false;
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form5 form5 = new Form5();
-            form5.label9.Text = enpresak[1].ToString();
-            form5.Show();
+            Form7 form7 = new Form7();
+            form7.label9.Text = enpresak[1].ToString();
+            form7.Show();
             Visible = false;
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Form5 form5 = new Form5();
-            form5.label9.Text = enpresak[2].ToString();
-            form5.Show();
+            Form7 form7 = new Form7();
+            form7.label9.Text = enpresak[2].ToString();
+            form7.Show();
             Visible = false;
         }
 
