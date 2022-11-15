@@ -21,23 +21,11 @@ namespace pcboxproba
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            using (var db = new PcBoxDbContext())
-            {
-                var produktuakData = db.stock_valuation_layers.GroupBy(b=>b.product_id).ToDictionary(x=>x.Key,x=>x.Sum(d=> d.quantity));
 
-                if(produktuakData != null)
-                {
-                    if(produktuakData.Count() > 0)
-                    {
-                        chart1.DataSource= produktuakData;
-                        chart1.Series[0].YValueMembers = "Value";
-                        chart1.Series[0].XValueMember = "Key";
-                        chart1.DataBind();
-                    }
-                }
+      
 
 
-            }
+            
 
         }
 

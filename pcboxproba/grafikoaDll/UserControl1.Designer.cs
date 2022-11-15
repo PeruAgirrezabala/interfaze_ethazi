@@ -51,7 +51,7 @@
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(323, 236);
+            this.chart1.Size = new System.Drawing.Size(603, 374);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
             title1.Name = "Title1";
@@ -63,7 +63,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.chart1);
             this.Name = "Grafikoaren_kontrola";
-            this.Size = new System.Drawing.Size(323, 226);
+            this.Size = new System.Drawing.Size(606, 374);
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);
 

@@ -57,5 +57,17 @@ namespace pcboxproba.Frames
 
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (paswordtb.PasswordChar == '\0')
+            {
+                paswordtb.PasswordChar = '*';
+            }
+            else
+            {
+                paswordtb.PasswordChar = '\0';
+            }
+
+        }
     }
 }
