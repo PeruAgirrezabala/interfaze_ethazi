@@ -1,6 +1,6 @@
 ﻿namespace pcboxproba.Frames
 {
-    partial class Form7
+    partial class Ornitzaile_ezpezifiko
     {
         /// <summary>
         /// Required designer variable.

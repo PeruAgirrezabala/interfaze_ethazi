@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace pcboxproba.Frames
 {
-    public partial class Form8 : Form
+    public partial class Ornitzaile_onenak : Form
     {
-        public Form8()
+        public Ornitzaile_onenak()
         {
             InitializeComponent();
         }
@@ -24,7 +24,7 @@ namespace pcboxproba.Frames
                 using (var db = new PcBoxDbContext())
                 {
 
-                    var mejoresProveedores = db.res_partners.Where(b => b.is_company == true && b.id != 1).OrderBy(c => c.supplier_rank).Select(b => b.name).ToArray();
+                    var mejoresProveedores = db.res_partners.Where(b => b.is_company == true && b.id != 1).OrderByDescending(c => c.supplier_rank).Select(b => b.name).ToArray();
                     enpresak = mejoresProveedores;
                     if (mejoresProveedores != null)
                     {
@@ -43,14 +43,14 @@ namespace pcboxproba.Frames
 
         private void atzera_button_Click(object sender, EventArgs e)
         {
-            Form3 form3 = new Form3();
+            Main form3 = new Main();
             form3.Show();
             Visible = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form5 form5 = new Form5();
+            Bezero_ezpezifiko form5 = new Bezero_ezpezifiko();
             form5.label9.Text = enpresak[0].ToString();
             form5.Show();
             Visible = false;
@@ -58,7 +58,7 @@ namespace pcboxproba.Frames
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form5 form5 = new Form5();
+            Bezero_ezpezifiko form5 = new Bezero_ezpezifiko();
             form5.label9.Text = enpresak[1].ToString();
             form5.Show();
             Visible = false;
@@ -66,7 +66,7 @@ namespace pcboxproba.Frames
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Form5 form5 = new Form5();
+            Bezero_ezpezifiko form5 = new Bezero_ezpezifiko();
             form5.label9.Text = enpresak[2].ToString();
             form5.Show();
             Visible = false;

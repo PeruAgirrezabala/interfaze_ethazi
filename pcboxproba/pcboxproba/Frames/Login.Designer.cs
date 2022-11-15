@@ -1,6 +1,6 @@
 ﻿namespace pcboxproba.Frames
 {
-    partial class Form2
+    partial class Login
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.emailtb = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -36,7 +36,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.paswordtb = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.password_visible_btn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -104,24 +104,24 @@
             this.paswordtb.Size = new System.Drawing.Size(207, 20);
             this.paswordtb.TabIndex = 6;
             // 
-            // button2
+            // password_visible_btn
             // 
-            this.button2.Location = new System.Drawing.Point(382, 383);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.password_visible_btn.Location = new System.Drawing.Point(382, 383);
+            this.password_visible_btn.Name = "password_visible_btn";
+            this.password_visible_btn.Size = new System.Drawing.Size(75, 23);
+            this.password_visible_btn.TabIndex = 7;
+            this.password_visible_btn.Text = "button2";
+            this.password_visible_btn.UseVisualStyleBackColor = true;
+            this.password_visible_btn.Click += new System.EventHandler(this.password_visible_btn_Click);
             // 
-            // Form2
+            // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(540, 598);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.password_visible_btn);
             this.Controls.Add(this.paswordtb);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -130,7 +130,7 @@
             this.Controls.Add(this.emailtb);
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form2";
+            this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pc Box";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -148,6 +148,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         public System.Windows.Forms.TextBox paswordtb;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button password_visible_btn;
     }
 }

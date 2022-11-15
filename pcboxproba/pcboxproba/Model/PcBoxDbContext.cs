@@ -19,6 +19,7 @@ namespace pcboxproba.Model
         public DbSet<stock_move> stock_moves { get; set; }
         public DbSet<stock_valuation_layer> stock_valuation_layers {get;set;}
         public DbSet<sale_order>sale_orders { get; set; }
+        public DbSet<purchase_order_line> purchase_order_lines { get; set; }
 
 
 

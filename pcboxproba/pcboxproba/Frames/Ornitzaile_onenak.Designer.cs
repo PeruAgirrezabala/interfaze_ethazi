@@ -1,6 +1,6 @@
 ﻿namespace pcboxproba.Frames
 {
-    partial class Form8
+    partial class Ornitzaile_onenak
     {
         /// <summary>
         /// Required designer variable.
@@ -36,6 +36,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -125,12 +126,25 @@
             this.pictureBox1.TabIndex = 25;
             this.pictureBox1.TabStop = false;
             // 
-            // Form8
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label4.Font = new System.Drawing.Font("Proxima Nova Rg", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label4.Location = new System.Drawing.Point(216, 27);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(269, 29);
+            this.label4.TabIndex = 27;
+            this.label4.Text = "HORNITZAILE ONENAK";
+            // 
+            // Ornitzaile_onenak
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(477, 495);
+            this.ClientSize = new System.Drawing.Size(497, 493);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.atzera_button);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label3);
@@ -139,7 +153,7 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Name = "Form8";
+            this.Name = "Ornitzaile_onenak";
             this.Text = "Form8";
             this.Load += new System.EventHandler(this.Form8_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -158,5 +172,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label4;
     }
 }

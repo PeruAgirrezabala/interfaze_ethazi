@@ -7,12 +7,12 @@ using System.Windows.Forms;
 
 namespace pcboxproba.Frames
 {
-    public partial class Form4 : Form
+    public partial class Bezero_onenak : Form
     {
 
 
         public  string[] enpresak;
-        public Form4()
+        public Bezero_onenak()
         {
             InitializeComponent();
         }
@@ -22,7 +22,7 @@ namespace pcboxproba.Frames
             using(var db = new PcBoxDbContext())
             {
 
-               var  mejoresClientes = db.res_partners.Where(b=>b.is_company==true && b.id!=1).OrderBy(c=>c.customer_rank).Select(b=>b.name).ToArray();
+               var  mejoresClientes = db.res_partners.Where(b=>b.is_company==true && b.id!=1).OrderByDescending(c=>c.customer_rank).Select(b=>b.name).ToArray();
                 enpresak = mejoresClientes;
                 if( mejoresClientes != null)
                 {
@@ -41,7 +41,7 @@ namespace pcboxproba.Frames
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form7 form7 = new Form7();
+            Ornitzaile_ezpezifiko form7 = new Ornitzaile_ezpezifiko();
             form7.label9.Text = enpresak[0].ToString();
             form7.Show();
             Visible = false;
@@ -49,7 +49,7 @@ namespace pcboxproba.Frames
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form7 form7 = new Form7();
+            Ornitzaile_ezpezifiko form7 = new Ornitzaile_ezpezifiko();
             form7.label9.Text = enpresak[1].ToString();
             form7.Show();
             Visible = false;
@@ -57,7 +57,7 @@ namespace pcboxproba.Frames
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Form7 form7 = new Form7();
+            Ornitzaile_ezpezifiko form7 = new Ornitzaile_ezpezifiko();
             form7.label9.Text = enpresak[2].ToString();
             form7.Show();
             Visible = false;
@@ -65,7 +65,7 @@ namespace pcboxproba.Frames
 
         private void atzera_button_Click(object sender, EventArgs e)
         {
-            Form3 form3 = new Form3();
+            Main form3 = new Main();
             form3.Show();
             Visible=false;
         }

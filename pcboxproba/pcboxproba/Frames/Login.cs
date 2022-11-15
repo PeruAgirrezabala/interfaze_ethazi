@@ -13,9 +13,9 @@ using System.Windows.Forms;
 
 namespace pcboxproba.Frames
 {
-    public partial class Form2 : Form
+    public partial class Login : Form
     {
-        public Form2()
+        public Login()
         {
             InitializeComponent();
         }
@@ -24,23 +24,23 @@ namespace pcboxproba.Frames
         {
             using (var db = new PcBoxDbContext()) 
             {
-                var logindata = db.res_users.Select(b=>b.login).ToArray();
-                if (logindata != null)
+                var login_users_array = db.res_users.Select(b=>b.login).ToArray();
+                if (login_users_array != null)
                 {
                     if(emailtb.Text!="")
                     {
-                        for(int i=0; i < logindata.Length; i++)
+                        for(int i=0; i < login_users_array.Length; i++)
                         {
-                            if (emailtb.Text == logindata[i])
+                            if (emailtb.Text == login_users_array[i])
                             {
-                                var paswordata = db.res_users.Select(b => b.password).ToArray();
-                                if (Model.res.GenerateComparableHash.VerifyNonstandardHash(paswordtb.Text, paswordata[i]))
+                                var login_password_array = db.res_users.Select(b => b.password).ToArray();
+                                if (Model.res.GenerateComparableHash.VerifyNonstandardHash(paswordtb.Text, login_password_array[i]))
                                 {
 
-                                    Form3 form3 = new Form3();
-                                    form3.Show();
+                                    Main main = new Main();
+                                    main.Show();
 
-                                    form3.erabiltzailea_target_label.Text = form3.erabiltzailea_target_label.Text + " " + logindata[i];
+                                    main.erabiltzailea_target_label.Text = main.erabiltzailea_target_label.Text + " " + login_users_array[i];
                                     Visible = false;
                                 }
 
@@ -57,7 +57,7 @@ namespace pcboxproba.Frames
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void password_visible_btn_Click(object sender, EventArgs e)
         {
             if (paswordtb.PasswordChar == '\0')
             {

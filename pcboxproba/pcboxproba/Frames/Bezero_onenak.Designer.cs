@@ -1,6 +1,6 @@
 ﻿namespace pcboxproba.Frames
 {
-    partial class Form4
+    partial class Bezero_onenak
     {
         /// <summary>
         /// Required designer variable.
@@ -36,6 +36,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.atzera_button = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -125,12 +126,25 @@
             this.atzera_button.UseVisualStyleBackColor = true;
             this.atzera_button.Click += new System.EventHandler(this.atzera_button_Click);
             // 
-            // Form4
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label4.Font = new System.Drawing.Font("Proxima Nova Rg", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label4.Location = new System.Drawing.Point(222, 35);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(207, 29);
+            this.label4.TabIndex = 28;
+            this.label4.Text = "BEZERO ONENAK";
+            // 
+            // Bezero_onenak
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(477, 495);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.atzera_button);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label3);
@@ -140,7 +154,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.ForeColor = System.Drawing.SystemColors.Control;
-            this.Name = "Form4";
+            this.Name = "Bezero_onenak";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form4";
             this.Load += new System.EventHandler(this.Form4_Load);
@@ -160,5 +174,6 @@
         public System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button atzera_button;
+        private System.Windows.Forms.Label label4;
     }
 }

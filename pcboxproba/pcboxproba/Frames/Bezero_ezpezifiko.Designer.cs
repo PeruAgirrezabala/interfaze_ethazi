@@ -1,6 +1,6 @@
 ﻿namespace pcboxproba.Frames
 {
-    partial class Form5
+    partial class Bezero_ezpezifiko
     {
         /// <summary>
         /// Required designer variable.
@@ -140,11 +140,11 @@
             // 
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Proxima Nova Rg", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(239, 37);
+            this.label9.Location = new System.Drawing.Point(237, 51);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(124, 42);
+            this.label9.Size = new System.Drawing.Size(80, 29);
             this.label9.TabIndex = 16;
             this.label9.Text = "label9";
             // 
@@ -159,7 +159,7 @@
             this.atzera_button.UseVisualStyleBackColor = true;
             this.atzera_button.Click += new System.EventHandler(this.atzera_button_Click);
             // 
-            // Form5
+            // Bezero_ezpezifiko
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -177,7 +177,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Name = "Form5";
+            this.Name = "Bezero_ezpezifiko";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form5";
             this.Load += new System.EventHandler(this.Form5_Load);

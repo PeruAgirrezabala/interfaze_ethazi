@@ -99,49 +99,56 @@
     <Compile Include="Frames\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Frames\Form2.cs">
+    <Compile Include="Frames\Produktu_erosienak.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frames\Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="Frames\Produktu_erosienak.Designer.cs">
+      <DependentUpon>Produktu_erosienak.cs</DependentUpon>
     </Compile>
-    <Compile Include="Frames\Form3.cs">
+    <Compile Include="Frames\Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frames\Form3.Designer.cs">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <Compile Include="Frames\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Frames\Form4.cs">
+    <Compile Include="Frames\Main.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frames\Form4.Designer.cs">
-      <DependentUpon>Form4.cs</DependentUpon>
+    <Compile Include="Frames\Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
     </Compile>
-    <Compile Include="Frames\Form5.cs">
+    <Compile Include="Frames\Bezero_onenak.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frames\Form5.Designer.cs">
-      <DependentUpon>Form5.cs</DependentUpon>
+    <Compile Include="Frames\Bezero_onenak.Designer.cs">
+      <DependentUpon>Bezero_onenak.cs</DependentUpon>
     </Compile>
-    <Compile Include="Frames\Form6.cs">
+    <Compile Include="Frames\Bezero_ezpezifiko.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frames\Form6.Designer.cs">
-      <DependentUpon>Form6.cs</DependentUpon>
+    <Compile Include="Frames\Bezero_ezpezifiko.Designer.cs">
+      <DependentUpon>Bezero_ezpezifiko.cs</DependentUpon>
     </Compile>
-    <Compile Include="Frames\Form7.cs">
+    <Compile Include="Frames\Produktu_salduenak.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frames\Form7.Designer.cs">
-      <DependentUpon>Form7.cs</DependentUpon>
+    <Compile Include="Frames\Produktu_salduenak.Designer.cs">
+      <DependentUpon>Produktu_salduenak.cs</DependentUpon>
     </Compile>
-    <Compile Include="Frames\Form8.cs">
+    <Compile Include="Frames\Ornitzaile_ezpezifiko.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frames\Form8.Designer.cs">
-      <DependentUpon>Form8.cs</DependentUpon>
+    <Compile Include="Frames\Ornitzaile_ezpezifiko.Designer.cs">
+      <DependentUpon>Ornitzaile_ezpezifiko.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frames\Ornitzaile_onenak.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frames\Ornitzaile_onenak.Designer.cs">
+      <DependentUpon>Ornitzaile_onenak.cs</DependentUpon>
     </Compile>
     <Compile Include="Model\PcBoxDbContext.cs" />
+    <Compile Include="Model\purchase_order_line.cs" />
     <Compile Include="Model\res\GenerateComparableHash.cs" />
     <Compile Include="Model\res\HMACSHA512PseudoRandomFunction.cs" />
     <Compile Include="Model\res\IPseudoRandomFunction.cs" />
@@ -157,26 +164,29 @@
     <EmbeddedResource Include="Frames\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frames\Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="Frames\Produktu_erosienak.resx">
+      <DependentUpon>Produktu_erosienak.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frames\Form3.resx">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <EmbeddedResource Include="Frames\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frames\Form4.resx">
-      <DependentUpon>Form4.cs</DependentUpon>
+    <EmbeddedResource Include="Frames\Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frames\Form5.resx">
-      <DependentUpon>Form5.cs</DependentUpon>
+    <EmbeddedResource Include="Frames\Bezero_onenak.resx">
+      <DependentUpon>Bezero_onenak.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frames\Form6.resx">
-      <DependentUpon>Form6.cs</DependentUpon>
+    <EmbeddedResource Include="Frames\Bezero_ezpezifiko.resx">
+      <DependentUpon>Bezero_ezpezifiko.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frames\Form7.resx">
-      <DependentUpon>Form7.cs</DependentUpon>
+    <EmbeddedResource Include="Frames\Produktu_salduenak.resx">
+      <DependentUpon>Produktu_salduenak.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frames\Form8.resx">
-      <DependentUpon>Form8.cs</DependentUpon>
+    <EmbeddedResource Include="Frames\Ornitzaile_ezpezifiko.resx">
+      <DependentUpon>Ornitzaile_ezpezifiko.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frames\Ornitzaile_onenak.resx">
+      <DependentUpon>Ornitzaile_onenak.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
