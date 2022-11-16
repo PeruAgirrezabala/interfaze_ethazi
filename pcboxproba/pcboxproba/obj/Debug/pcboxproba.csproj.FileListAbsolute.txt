@@ -115,7 +115,6 @@ C:\Users\USUARIO\Desktop\interfaze_ethazi\pcboxproba\pcboxproba\bin\Debug\System
 C:\Users\USUARIO\Desktop\interfaze_ethazi\pcboxproba\pcboxproba\bin\Debug\System.ValueTuple.xml
 C:\Users\USUARIO\Desktop\interfaze_ethazi\pcboxproba\pcboxproba\obj\Debug\pcboxproba.csproj.AssemblyReference.cache
 C:\Users\USUARIO\Desktop\interfaze_ethazi\pcboxproba\pcboxproba\obj\Debug\pcboxproba.csproj.SuggestedBindingRedirects.cache
-C:\Users\USUARIO\Desktop\interfaze_ethazi\pcboxproba\pcboxproba\obj\Debug\pcboxproba.Form1.resources
 C:\Users\USUARIO\Desktop\interfaze_ethazi\pcboxproba\pcboxproba\obj\Debug\pcboxproba.Frames.Login.resources
 C:\Users\USUARIO\Desktop\interfaze_ethazi\pcboxproba\pcboxproba\obj\Debug\pcboxproba.Frames.Main.resources
 C:\Users\USUARIO\Desktop\interfaze_ethazi\pcboxproba\pcboxproba\obj\Debug\pcboxproba.Frames.Bezero_onenak.resources
