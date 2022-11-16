@@ -17,6 +17,8 @@ namespace pcboxproba.Frames
             InitializeComponent();
         }
 
+        //beheko dena interfazean nabegatzeko botoiak dira,hau da, frame batetik bestera pasatzeko metodoak
+
         private void saioa_itxi_btn_Click(object sender, EventArgs e)
         {
             Login login = new Login();
@@ -51,6 +53,11 @@ namespace pcboxproba.Frames
             Produktu_erosienak produktu_Erosienak = new Produktu_erosienak();
             produktu_Erosienak.Show();
             Visible = false;
+        }
+
+        private void Main_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

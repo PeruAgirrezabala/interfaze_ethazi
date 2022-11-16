@@ -43,17 +43,17 @@
             // 
             this.erabiltzailea_target_label.AutoSize = true;
             this.erabiltzailea_target_label.BackColor = System.Drawing.Color.Transparent;
-            this.erabiltzailea_target_label.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.erabiltzailea_target_label.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.erabiltzailea_target_label.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.erabiltzailea_target_label.Location = new System.Drawing.Point(301, 21);
+            this.erabiltzailea_target_label.Location = new System.Drawing.Point(218, 26);
             this.erabiltzailea_target_label.Name = "erabiltzailea_target_label";
-            this.erabiltzailea_target_label.Size = new System.Drawing.Size(0, 25);
+            this.erabiltzailea_target_label.Size = new System.Drawing.Size(0, 23);
             this.erabiltzailea_target_label.TabIndex = 0;
             // 
             // saioa_itxi_btn
             // 
             this.saioa_itxi_btn.BackColor = System.Drawing.Color.Red;
-            this.saioa_itxi_btn.Location = new System.Drawing.Point(430, 82);
+            this.saioa_itxi_btn.Location = new System.Drawing.Point(537, 26);
             this.saioa_itxi_btn.Name = "saioa_itxi_btn";
             this.saioa_itxi_btn.Size = new System.Drawing.Size(93, 24);
             this.saioa_itxi_btn.TabIndex = 1;
@@ -73,7 +73,7 @@
             // 
             // gehien_saldutako_produktuak_btn
             // 
-            this.gehien_saldutako_produktuak_btn.Location = new System.Drawing.Point(365, 187);
+            this.gehien_saldutako_produktuak_btn.Location = new System.Drawing.Point(482, 187);
             this.gehien_saldutako_produktuak_btn.Name = "gehien_saldutako_produktuak_btn";
             this.gehien_saldutako_produktuak_btn.Size = new System.Drawing.Size(127, 38);
             this.gehien_saldutako_produktuak_btn.TabIndex = 3;
@@ -83,7 +83,7 @@
             // 
             // Geien_erositako_produktuak_btn
             // 
-            this.Geien_erositako_produktuak_btn.Location = new System.Drawing.Point(365, 380);
+            this.Geien_erositako_produktuak_btn.Location = new System.Drawing.Point(482, 380);
             this.Geien_erositako_produktuak_btn.Name = "Geien_erositako_produktuak_btn";
             this.Geien_erositako_produktuak_btn.Size = new System.Drawing.Size(127, 38);
             this.Geien_erositako_produktuak_btn.TabIndex = 4;
@@ -115,7 +115,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(550, 578);
+            this.ClientSize = new System.Drawing.Size(682, 491);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.Hornitzaile_erabilienak_btn);
             this.Controls.Add(this.Geien_erositako_produktuak_btn);
@@ -126,7 +126,8 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form3";
+            this.Text = "Main";
+            this.Load += new System.EventHandler(this.Main_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

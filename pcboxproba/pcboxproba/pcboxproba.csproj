@@ -93,99 +93,91 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Frames\Form1.cs">
+    <Compile Include="frames\Produktu_erosienak.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frames\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Frames\Produktu_erosienak.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Frames\Produktu_erosienak.Designer.cs">
+    <Compile Include="frames\Produktu_erosienak.Designer.cs">
       <DependentUpon>Produktu_erosienak.cs</DependentUpon>
     </Compile>
-    <Compile Include="Frames\Login.cs">
+    <Compile Include="frames\Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frames\Login.Designer.cs">
+    <Compile Include="frames\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Frames\Main.cs">
+    <Compile Include="frames\Main.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frames\Main.Designer.cs">
+    <Compile Include="frames\Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
-    <Compile Include="Frames\Bezero_onenak.cs">
+    <Compile Include="frames\Bezero_onenak.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frames\Bezero_onenak.Designer.cs">
+    <Compile Include="frames\Bezero_onenak.Designer.cs">
       <DependentUpon>Bezero_onenak.cs</DependentUpon>
     </Compile>
-    <Compile Include="Frames\Bezero_ezpezifiko.cs">
+    <Compile Include="frames\Bezero_ezpezifiko.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frames\Bezero_ezpezifiko.Designer.cs">
+    <Compile Include="frames\Bezero_ezpezifiko.Designer.cs">
       <DependentUpon>Bezero_ezpezifiko.cs</DependentUpon>
     </Compile>
-    <Compile Include="Frames\Produktu_salduenak.cs">
+    <Compile Include="frames\Produktu_salduenak.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frames\Produktu_salduenak.Designer.cs">
+    <Compile Include="frames\Produktu_salduenak.Designer.cs">
       <DependentUpon>Produktu_salduenak.cs</DependentUpon>
     </Compile>
-    <Compile Include="Frames\Ornitzaile_ezpezifiko.cs">
+    <Compile Include="frames\Ornitzaile_ezpezifiko.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frames\Ornitzaile_ezpezifiko.Designer.cs">
+    <Compile Include="frames\Ornitzaile_ezpezifiko.Designer.cs">
       <DependentUpon>Ornitzaile_ezpezifiko.cs</DependentUpon>
     </Compile>
-    <Compile Include="Frames\Ornitzaile_onenak.cs">
+    <Compile Include="frames\Ornitzaile_onenak.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frames\Ornitzaile_onenak.Designer.cs">
+    <Compile Include="frames\Ornitzaile_onenak.Designer.cs">
       <DependentUpon>Ornitzaile_onenak.cs</DependentUpon>
     </Compile>
-    <Compile Include="Model\PcBoxDbContext.cs" />
-    <Compile Include="Model\purchase_order_line.cs" />
-    <Compile Include="Model\res\GenerateComparableHash.cs" />
-    <Compile Include="Model\res\HMACSHA512PseudoRandomFunction.cs" />
-    <Compile Include="Model\res\IPseudoRandomFunction.cs" />
-    <Compile Include="Model\res\PBKDF2DeriveBytes.cs" />
-    <Compile Include="Model\res_partner.cs" />
-    <Compile Include="Model\res_users.cs" />
-    <Compile Include="Model\sale_order.cs" />
-    <Compile Include="Model\sale_order_line.cs" />
-    <Compile Include="Model\stock_move.cs" />
-    <Compile Include="Model\stock_valuation_layer.cs" />
+    <Compile Include="model\PcBoxDbContext.cs" />
+    <Compile Include="model\purchase_order_line.cs" />
+    <Compile Include="model\res\GenerateComparableHash.cs" />
+    <Compile Include="model\res\HMACSHA512PseudoRandomFunction.cs" />
+    <Compile Include="model\res\IPseudoRandomFunction.cs" />
+    <Compile Include="model\res\PBKDF2DeriveBytes.cs" />
+    <Compile Include="model\purchase_order.cs" />
+    <Compile Include="model\res_partner.cs" />
+    <Compile Include="model\res_users.cs" />
+    <Compile Include="model\sale_order.cs" />
+    <Compile Include="model\sale_order_line.cs" />
+    <Compile Include="model\stock_move.cs" />
+    <Compile Include="model\stock_valuation_layer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Frames\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Frames\Produktu_erosienak.resx">
+    <EmbeddedResource Include="frames\Produktu_erosienak.resx">
       <DependentUpon>Produktu_erosienak.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frames\Login.resx">
+    <EmbeddedResource Include="frames\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frames\Main.resx">
+    <EmbeddedResource Include="frames\Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frames\Bezero_onenak.resx">
+    <EmbeddedResource Include="frames\Bezero_onenak.resx">
       <DependentUpon>Bezero_onenak.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frames\Bezero_ezpezifiko.resx">
+    <EmbeddedResource Include="frames\Bezero_ezpezifiko.resx">
       <DependentUpon>Bezero_ezpezifiko.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frames\Produktu_salduenak.resx">
+    <EmbeddedResource Include="frames\Produktu_salduenak.resx">
       <DependentUpon>Produktu_salduenak.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frames\Ornitzaile_ezpezifiko.resx">
+    <EmbeddedResource Include="frames\Ornitzaile_ezpezifiko.resx">
       <DependentUpon>Ornitzaile_ezpezifiko.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frames\Ornitzaile_onenak.resx">
+    <EmbeddedResource Include="frames\Ornitzaile_onenak.resx">
       <DependentUpon>Ornitzaile_onenak.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -213,10 +205,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\close_4506.png" />
+    <None Include="resources\close_4506.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\icon.png" />
+    <None Include="resources\icon.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\grafikoaDll\grafikoaDll.csproj">

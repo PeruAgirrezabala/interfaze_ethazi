@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ornitzaile_ezpezifiko));
             this.atzera_button = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.azken_eskaria_noiz_label = new System.Windows.Forms.Label();
@@ -162,12 +163,12 @@
             this.pictureBox1.TabIndex = 18;
             this.pictureBox1.TabStop = false;
             // 
-            // Form7
+            // Ornitzaile_ezpezifiko
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(530, 451);
+            this.ClientSize = new System.Drawing.Size(682, 491);
             this.Controls.Add(this.atzera_button);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.azken_eskaria_noiz_label);
@@ -179,7 +180,9 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
-            this.Name = "Form7";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "Ornitzaile_ezpezifiko";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form7";
             this.Load += new System.EventHandler(this.Form7_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

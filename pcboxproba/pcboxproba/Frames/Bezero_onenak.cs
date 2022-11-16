@@ -22,16 +22,16 @@ namespace pcboxproba.Frames
             using(var db = new PcBoxDbContext())
             {
 
-               var  mejoresClientes = db.res_partners.Where(b=>b.is_company==true && b.id!=1).OrderByDescending(c=>c.customer_rank).Select(b=>b.name).ToArray();
-                enpresak = mejoresClientes;
-                if( mejoresClientes != null)
+               var  mejores_clientes_array = db.res_partners.Where(b=>b.is_company==true && b.id!=1).OrderByDescending(c=>c.customer_rank).Select(b=>b.name).ToArray();
+                enpresak = mejores_clientes_array;
+                if( mejores_clientes_array != null)
                 {
 
-                    label1.Text = mejoresClientes[0].ToString();
+                    label1.Text = mejores_clientes_array[0].ToString();
 
-                    label2.Text = mejoresClientes[1].ToString();
+                    label2.Text = mejores_clientes_array[1].ToString();
 
-                    label3.Text = mejoresClientes[2].ToString();
+                    label3.Text = mejores_clientes_array[2].ToString();
 
                 }
 
@@ -41,32 +41,35 @@ namespace pcboxproba.Frames
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Ornitzaile_ezpezifiko form7 = new Ornitzaile_ezpezifiko();
-            form7.label9.Text = enpresak[0].ToString();
-            form7.Show();
+            Bezero_ezpezifiko bezero_ezpezifiko = new Bezero_ezpezifiko();
+            bezero_ezpezifiko.label9.Text = enpresak[0].ToString();
+            bezero_ezpezifiko.Text = enpresak[0].ToString();
+            bezero_ezpezifiko.Show();
             Visible = false;
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Ornitzaile_ezpezifiko form7 = new Ornitzaile_ezpezifiko();
-            form7.label9.Text = enpresak[1].ToString();
-            form7.Show();
+            Bezero_ezpezifiko bezero_ezpezifiko = new Bezero_ezpezifiko();
+            bezero_ezpezifiko.label9.Text = enpresak[1].ToString();
+            bezero_ezpezifiko.Text = enpresak[1].ToString();
+            bezero_ezpezifiko.Show();
             Visible = false;
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Ornitzaile_ezpezifiko form7 = new Ornitzaile_ezpezifiko();
-            form7.label9.Text = enpresak[2].ToString();
-            form7.Show();
+            Bezero_ezpezifiko bezero_ezpezifiko = new Bezero_ezpezifiko();
+            bezero_ezpezifiko.label9.Text = enpresak[2].ToString();
+            bezero_ezpezifiko.Text = enpresak[2].ToString();
+            bezero_ezpezifiko.Show();
             Visible = false;
         }
 
         private void atzera_button_Click(object sender, EventArgs e)
         {
-            Main form3 = new Main();
-            form3.Show();
+            Main main = new Main();
+            main.Show();
             Visible=false;
         }
     }

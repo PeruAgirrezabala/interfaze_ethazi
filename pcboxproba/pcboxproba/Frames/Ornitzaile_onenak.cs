@@ -23,17 +23,17 @@ namespace pcboxproba.Frames
 
                 using (var db = new PcBoxDbContext())
                 {
-
-                    var mejoresProveedores = db.res_partners.Where(b => b.is_company == true && b.id != 1).OrderByDescending(c => c.supplier_rank).Select(b => b.name).ToArray();
-                    enpresak = mejoresProveedores;
-                    if (mejoresProveedores != null)
+                    //queriak ornitzaileen array bat itzultzen du onenetik tyxarrenera ordenatuta
+                    var mejores_proveedores_array = db.res_partners.Where(b => b.is_company == true && b.id != 1).OrderByDescending(c => c.supplier_rank).Select(b => b.name).ToArray();
+                    enpresak = mejores_proveedores_array;
+                    if (mejores_proveedores_array != null)
                     {
+                        //arrayeko lehenak hornitzaile onenak dira eta horietatik hiru hoberenak labeletam jarriko ditu
+                        label1.Text = mejores_proveedores_array[0].ToString();
 
-                        label1.Text = mejoresProveedores[0].ToString();
+                        label2.Text = mejores_proveedores_array[1].ToString();
 
-                        label2.Text = mejoresProveedores[1].ToString();
-
-                        label3.Text = mejoresProveedores[2].ToString();
+                        label3.Text = mejores_proveedores_array[2].ToString();
 
                     }
 
@@ -43,32 +43,35 @@ namespace pcboxproba.Frames
 
         private void atzera_button_Click(object sender, EventArgs e)
         {
-            Main form3 = new Main();
-            form3.Show();
+            Main main = new Main();
+            main.Show();
             Visible = false;
         }
-
+        //enpresaren informazio ezpezifiko-ra eramateko botoiak
         private void button1_Click(object sender, EventArgs e)
         {
-            Bezero_ezpezifiko form5 = new Bezero_ezpezifiko();
-            form5.label9.Text = enpresak[0].ToString();
-            form5.Show();
+            Ornitzaile_ezpezifiko ornitzaile_espezifiko = new Ornitzaile_ezpezifiko();
+            ornitzaile_espezifiko.label9.Text = enpresak[0].ToString();
+            ornitzaile_espezifiko.Text=enpresak[0].ToString();
+            ornitzaile_espezifiko.Show();
             Visible = false;
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Bezero_ezpezifiko form5 = new Bezero_ezpezifiko();
-            form5.label9.Text = enpresak[1].ToString();
-            form5.Show();
+            Ornitzaile_ezpezifiko ornitzaile_espezifiko = new Ornitzaile_ezpezifiko();
+            ornitzaile_espezifiko.label9.Text = enpresak[1].ToString();
+            ornitzaile_espezifiko.Text = enpresak[1].ToString();
+            ornitzaile_espezifiko.Show();
             Visible = false;
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Bezero_ezpezifiko form5 = new Bezero_ezpezifiko();
-            form5.label9.Text = enpresak[2].ToString();
-            form5.Show();
+            Ornitzaile_ezpezifiko ornitzaile_espezifiko = new Ornitzaile_ezpezifiko();
+            ornitzaile_espezifiko.label9.Text = enpresak[2].ToString();
+            ornitzaile_espezifiko.Text = enpresak[2].ToString();
+            ornitzaile_espezifiko.Show();
             Visible = false;
         }
     }

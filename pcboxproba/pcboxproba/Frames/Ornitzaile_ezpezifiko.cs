@@ -22,14 +22,15 @@ namespace pcboxproba.Frames
         {
             using (var db = new PcBoxDbContext())
             {
+                
                 var enpresa_id_array = db.res_partners.Where(b => b.name == label9.Text).Select(b => b.id).ToArray();
                 string enpresa_id_string = enpresa_id_array[0].ToString();
                 int enpresa_id_int = Convert.ToInt32(enpresa_id_string);
 
-                var zenbat_erosketa = db.sale_orders.Where(b => b.partner_id == enpresa_id_int).Count().ToString();
-                var sortutako_dirua = db.sale_orders.Where(b => b.partner_id == enpresa_id_int).Sum(b => b.amount_total).ToString();
-                var azken_eskaria_izena = db.sale_orders.Where(b => b.partner_id == enpresa_id_int).OrderBy(b => b.effective_date).Select(b => b.name).ToArray();
-                var azken_eskaria_data = db.sale_orders.Where(b => b.partner_id == enpresa_id_int).OrderBy(b => b.effective_date).Select(b => b.effective_date).ToArray();
+                var zenbat_erosketa = db.purchase_orders.Where(b => b.partner_id == enpresa_id_int).Count().ToString();
+                var sortutako_dirua = db.purchase_orders.Where(b => b.partner_id == enpresa_id_int).Sum(b => b.amount_total).ToString();
+                var azken_eskaria_izena = db.purchase_orders.Where(b => b.partner_id == enpresa_id_int).OrderBy(b => b.effective_date).Select(b => b.name).ToArray();
+                var azken_eskaria_data = db.purchase_orders.Where(b => b.partner_id == enpresa_id_int).OrderBy(b => b.effective_date).Select(b => b.effective_date).ToArray();
 
                 eskariak_label.Text = zenbat_erosketa;
                 sortutako_dirua_label.Text = sortutako_dirua;
@@ -46,8 +47,8 @@ namespace pcboxproba.Frames
 
         private void atzera_button_Click(object sender, EventArgs e)
         {
-            Bezero_onenak form4 = new Bezero_onenak();
-            form4.Show();
+            Ornitzaile_onenak ornitzaile_onenak = new Ornitzaile_onenak();
+            ornitzaile_onenak.Show();
             Visible = false;
         }
     }

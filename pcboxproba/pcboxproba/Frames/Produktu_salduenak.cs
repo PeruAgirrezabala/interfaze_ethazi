@@ -59,13 +59,21 @@ namespace pcboxproba.Frames
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void grafikoa_deskargatu_btn_Click(object sender, EventArgs e)
         {
             var grafikoa_gorde = grafikoaren_kontrola1.Controls.OfType<System.Windows.Forms.DataVisualization.Charting.Chart>();
             foreach (var grafiko in grafikoa_gorde)
             {
-                   grafiko.SaveImage("C:\\Users\\..\\Downloads\\grafikoa.png", ChartImageFormat.Png);
+                grafiko.SaveImage("..\\..\\..\\grafikoak\\produktu_erosienak_grafikoa.png", ChartImageFormat.Png);
             }
+        }
+
+        private void atzera_btn_Click(object sender, EventArgs e)
+        {
+            Main main = new Main();
+            main.Show();
+            Visible = false;
+
         }
     }
 }

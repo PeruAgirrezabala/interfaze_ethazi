@@ -32,7 +32,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.emailtb = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.logina_egiaztatu_btn = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.paswordtb = new System.Windows.Forms.TextBox();
@@ -66,16 +66,16 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Sartu ezazu zure emaila";
             // 
-            // button1
+            // logina_egiaztatu_btn
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(191, 435);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(133, 59);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Hasi saioa";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.logina_egiaztatu_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logina_egiaztatu_btn.Location = new System.Drawing.Point(191, 435);
+            this.logina_egiaztatu_btn.Name = "logina_egiaztatu_btn";
+            this.logina_egiaztatu_btn.Size = new System.Drawing.Size(133, 59);
+            this.logina_egiaztatu_btn.TabIndex = 3;
+            this.logina_egiaztatu_btn.Text = "Hasi saioa";
+            this.logina_egiaztatu_btn.UseVisualStyleBackColor = true;
+            this.logina_egiaztatu_btn.Click += new System.EventHandler(this.logina_egiaztatu_btn_Click);
             // 
             // label2
             // 
@@ -110,7 +110,7 @@
             this.password_visible_btn.Name = "password_visible_btn";
             this.password_visible_btn.Size = new System.Drawing.Size(75, 23);
             this.password_visible_btn.TabIndex = 7;
-            this.password_visible_btn.Text = "button2";
+            this.password_visible_btn.Text = "Erakutsi";
             this.password_visible_btn.UseVisualStyleBackColor = true;
             this.password_visible_btn.Click += new System.EventHandler(this.password_visible_btn_Click);
             // 
@@ -125,7 +125,7 @@
             this.Controls.Add(this.paswordtb);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.logina_egiaztatu_btn);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.emailtb);
             this.Controls.Add(this.pictureBox1);
@@ -144,7 +144,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox emailtb;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button logina_egiaztatu_btn;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         public System.Windows.Forms.TextBox paswordtb;
