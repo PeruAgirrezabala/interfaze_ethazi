@@ -24,6 +24,7 @@ namespace pcboxproba.Frames
         private void logina_egiaztatu_btn_Click(object sender, EventArgs e)
         {
             using (var db = new PcBoxDbContext()) 
+
             {
                 //aray bat sortu odoo-ko erabiltzaile guztiekin
                 var login_users_array = db.res_users.Select(b=>b.login).ToArray();

@@ -39,7 +39,7 @@
             // 
             // grafikoa_deskargatu_btn
             // 
-            this.helpProvider1.SetHelpString(this.grafikoa_deskargatu_btn, "Botoi hau sakatzean proiektuko \"grafikoak\" karpetan gordeko da");
+            this.helpProvider1.SetHelpString(this.grafikoa_deskargatu_btn, "Botoi hau sakatzean mahaigaineko \"grafikoak\" karpetan gordeko da");
             this.grafikoa_deskargatu_btn.Location = new System.Drawing.Point(812, 177);
             this.grafikoa_deskargatu_btn.Name = "grafikoa_deskargatu_btn";
             this.helpProvider1.SetShowHelp(this.grafikoa_deskargatu_btn, true);

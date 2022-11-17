@@ -62,6 +62,7 @@ namespace pcboxproba.Frames
             foreach (var grafiko in grafikoa_gorde)
             {
                 grafiko.SaveImage("C:\\Users\\" + Environment.UserName + "\\Desktop\\grafikoak\\produktu_erosienak_grafikoa.png", ChartImageFormat.Png);
+               // grafiko.SaveImage("C:\\Users\\" + Environment.UserName + "\\Desktop\\grafikoak\\erregistroa\\produktu_erosienak_grafikoa("+DateTime.Now.ToString()+").png", ChartImageFormat.Png);
             }
 
         }
