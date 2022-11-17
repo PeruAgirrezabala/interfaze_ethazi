@@ -37,6 +37,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.paswordtb = new System.Windows.Forms.TextBox();
             this.password_visible_btn = new System.Windows.Forms.Button();
+            this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,8 +52,10 @@
             // 
             // emailtb
             // 
+            this.helpProvider1.SetHelpString(this.emailtb, "Sartu ezazu odoo-ko erabiltzailea");
             this.emailtb.Location = new System.Drawing.Point(156, 301);
             this.emailtb.Name = "emailtb";
+            this.helpProvider1.SetShowHelp(this.emailtb, true);
             this.emailtb.Size = new System.Drawing.Size(207, 20);
             this.emailtb.TabIndex = 1;
             // 
@@ -98,9 +101,11 @@
             // 
             // paswordtb
             // 
+            this.helpProvider1.SetHelpString(this.paswordtb, "Sartu ezazu odoo-ko pasahitza");
             this.paswordtb.Location = new System.Drawing.Point(156, 383);
             this.paswordtb.Name = "paswordtb";
             this.paswordtb.PasswordChar = '*';
+            this.helpProvider1.SetShowHelp(this.paswordtb, true);
             this.paswordtb.Size = new System.Drawing.Size(207, 20);
             this.paswordtb.TabIndex = 6;
             // 
@@ -129,7 +134,10 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.emailtb);
             this.Controls.Add(this.pictureBox1);
+            this.HelpButton = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pc Box";
@@ -149,5 +157,6 @@
         private System.Windows.Forms.Label label3;
         public System.Windows.Forms.TextBox paswordtb;
         private System.Windows.Forms.Button password_visible_btn;
+        private System.Windows.Forms.HelpProvider helpProvider1;
     }
 }

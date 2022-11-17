@@ -33,13 +33,16 @@
             this.atzera_btn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.grafikoaren_kontrola1 = new grafikoaDll.Grafikoaren_kontrola();
+            this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // grafikoa_deskargatu_btn
             // 
+            this.helpProvider1.SetHelpString(this.grafikoa_deskargatu_btn, "Botoi hau sakatzean proiektuko \"grafikoak\" karpetan gordeko da");
             this.grafikoa_deskargatu_btn.Location = new System.Drawing.Point(812, 177);
             this.grafikoa_deskargatu_btn.Name = "grafikoa_deskargatu_btn";
+            this.helpProvider1.SetShowHelp(this.grafikoa_deskargatu_btn, true);
             this.grafikoa_deskargatu_btn.Size = new System.Drawing.Size(75, 23);
             this.grafikoa_deskargatu_btn.TabIndex = 1;
             this.grafikoa_deskargatu_btn.Text = "Deskargatu";
@@ -82,7 +85,10 @@
             this.Controls.Add(this.atzera_btn);
             this.Controls.Add(this.grafikoa_deskargatu_btn);
             this.Controls.Add(this.pictureBox1);
+            this.HelpButton = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Produktu_salduenak";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Produktu salduenak";
@@ -97,5 +103,6 @@
         private System.Windows.Forms.Button atzera_btn;
         private System.Windows.Forms.PictureBox pictureBox1;
         private grafikoaDll.Grafikoaren_kontrola grafikoaren_kontrola1;
+        private System.Windows.Forms.HelpProvider helpProvider1;
     }
 }

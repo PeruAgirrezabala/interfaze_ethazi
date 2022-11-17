@@ -61,7 +61,7 @@ namespace pcboxproba.Frames
             var grafikoa_gorde = grafikoaren_kontrola1.Controls.OfType<System.Windows.Forms.DataVisualization.Charting.Chart>();
             foreach (var grafiko in grafikoa_gorde)
             {
-                grafiko.SaveImage("..\\..\\..\\grafikoak\\produktu_erosienak_grafikoa.png", ChartImageFormat.Png);
+                grafiko.SaveImage("C:\\Users\\" + Environment.UserName + "\\Desktop\\grafikoak\\produktu_erosienak_grafikoa.png", ChartImageFormat.Png);
             }
 
         }

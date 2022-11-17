@@ -33,7 +33,7 @@ namespace pcboxproba.Frames
                 var azken_eskaria_data = db.purchase_orders.Where(b => b.partner_id == enpresa_id_int).OrderBy(b => b.effective_date).Select(b => b.effective_date).ToArray();
 
                 eskariak_label.Text = zenbat_erosketa;
-                sortutako_dirua_label.Text = sortutako_dirua + " e";
+                sortutako_dirua_label.Text = sortutako_dirua + " €";
                 azken_eskaria_izena_label.Text = azken_eskaria_izena[0];
                 azken_eskaria_noiz_label.Text = azken_eskaria_data[0].ToString();
 
